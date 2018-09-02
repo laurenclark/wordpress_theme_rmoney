@@ -1,9 +1,9 @@
-# Basic Gulp File 
-## Use Sass, Gridzilla, PostCss, Uglify, Livereload and Imagemin with your project.
-No bulky frameworks or templating engines, just simple stuff for small projects, or as a starting point for writing your own.
+# Please install the wp export dummy data and enable the Rmoney plugin.
 
 
-### Getting Started
+============================================
+
+###Gulp Taskrunner Docs
 
 You'll need to install Node.js, and then ```$ npm install gulp -g``` from the command line.
 
