@@ -1,0 +1,163 @@
+@import 'vendor/normalizer';
+@import 'vendor/gridzilla';
+@import 'components/settings';
+@import 'components/variables';
+@import 'components/global';
+@import 'components/header';
+
+
+.post__aggregate {
+	margin-top: 40px;
+	font-size: 14px;
+	a{
+		color:white;
+		text-decoration: none;
+	}
+	.post{
+		color: white;
+		min-height: 200px;
+		h3{
+			font-size: 1.8rem;
+			border-bottom: 2px solid white;
+			margin: 0;
+		}
+		p{
+			font-size: 1rem;
+		}
+		padding: 20px;
+		margin-bottom: 10px;
+		background: $rooster-red;
+		a{
+			color: $contrast-color;
+		}
+	}
+}
+
+.balance {
+	margin-top: 3em;
+	position: relative;
+
+	form {
+		@media (min-width: 768px) {
+			position: absolute;
+			display: block;
+			top: -200px;
+			right: 100px;
+		}
+	}
+
+	&#{-container} {
+		display: block;
+		position: relative;
+		margin-bottom: 40px;
+	}
+
+	&#{__image-container} {
+		margin: 40px auto;
+		-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		background: $rooster-yellow;
+		height: auto;
+		padding: 12px 10px 10px 10px;
+		max-width: 400px;
+
+		@media (min-width: 768px) {
+			height: 424px;
+		}
+	}
+
+	img {
+		max-width: 400px;
+		margin: 0 auto;
+		display: block;
+		height: auto;
+
+		@media (min-width: 768px) {
+			height: 400px;
+		}
+
+		-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	}
+}
+
+
+
+label {
+	color: $muted-color;
+	font-size: 18px;
+	position: absolute;
+	pointer-events: none;
+	left: 25px;
+	top: 10px;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+}
+
+#boost label{
+	left: 39px;
+	top: 16px;
+}
+
+.currency {
+	position: absolute;
+	left: 0px;
+	top: -3px;
+	font-size: 50px;
+}
+
+footer{
+	background: $rooster-aqua;
+	color: $contrast-color;
+	position: relative;
+	padding: 50px;
+	margin-top: 20px;
+	p {
+		margin: 0;
+		text-align: center;
+	}
+}
+
+.highlight {
+	position: absolute;
+	height: 60%;
+	width: 100px;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+@-webkit-keyframes inputHighlighter {
+	from {
+		background: #5264AE;
+	}
+
+	to {
+		width: 0;
+		background: transparent;
+	}
+}
+
+@-moz-keyframes inputHighlighter {
+	from {
+		background: #5264AE;
+	}
+
+	to {
+		width: 0;
+		background: transparent;
+	}
+}
+
+@keyframes inputHighlighter {
+	from {
+		background: #5264AE;
+	}
+
+	to {
+		width: 0;
+		background: transparent;
+	}
+}

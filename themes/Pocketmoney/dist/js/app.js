@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(){document.getElementById("hamburger").onclick=function(){var e=" "+hamburger.className+" ",n=document.querySelector(".menu");~e.indexOf(" open ")?(this.className=e.replace(" open "," "),n.style.display="none"):(this.className+=" open",n.style.display="block")}});
